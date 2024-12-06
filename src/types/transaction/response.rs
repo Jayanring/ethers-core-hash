@@ -15,7 +15,7 @@ use serde::{Deserialize, Serialize};
 use std::cmp::Ordering;
 
 /// Details of a signed transaction
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, Default)]
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize, Default, Hash)]
 pub struct Transaction {
     /// The transaction's hash
     pub hash: H256,
